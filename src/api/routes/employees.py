@@ -45,7 +45,7 @@ def update_employee(id_employee):
     emp.email = data['email']
     emp.salary = data['salary']
     emp.department = data['department']
-    emp.birth_day = data['birth_day']
+    emp.birth_date = data['birth_date']
     db.session.add(emp)
     db.session.commit()
     employee_schema = EmployeeSchema()
