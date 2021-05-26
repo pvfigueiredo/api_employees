@@ -1,4 +1,4 @@
-from flask import Blueprint, request, url_for, current_app
+from flask import Blueprint, request
 from src.api.utils.responses import response_with
 from src.api.utils import responses as resp
 from src.api.models.employees import Employee, EmployeeSchema
