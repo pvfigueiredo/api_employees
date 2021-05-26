@@ -4,7 +4,7 @@ from flask import Flask, logging
 from src.api.utils.database import db
 import src.api.utils.responses as resp
 from src.api.config.config import *
-from src.api.routes import employees
+from src.api.routes import employees, reports
 from src.api.utils.responses import response_with
 
 app = Flask(__name__)
@@ -23,7 +23,7 @@ with app.app_context():
     db.create_all()
 
 app.register_blueprint(employees.employee_routes, url_prefix='/employees')
-
+app.register_blueprint(reports.reports_route, url_prefix='/reports')
 
 @app.after_request
 def add_header(response):

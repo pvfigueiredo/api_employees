@@ -27,6 +27,7 @@ class Employee(db.Model):
     def __repr__(self):
         return f'{self.id}'
 
+
 class EmployeeSchema(ModelSchema):
     class Meta(ModelSchema.Meta):
         model = Employee
