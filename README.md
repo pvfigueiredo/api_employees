@@ -28,7 +28,7 @@
 >$ pip install -r path/to/the/project/src/requirements.txt
 
 4. **Configure the database**
-> Inside the config.py, change the configurations to point to the your database
+> After creating the database in your MySQL, inside the config.py, change the configurations to point to the your database
 
 4. **run the API**
 
